@@ -91,7 +91,7 @@ export const deploy = async () => {
   }
 
   {
-    console.log("7. Deploying Create3Factory");
+    console.log("7. Deploying Create3Factory via ImmutableCreate2Factory");
     const code = await ethers.provider.getCode(CREATE3_FACTORY);
     if (code.length > 2) {
       console.log("- contract already deployed");
