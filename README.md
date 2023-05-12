@@ -2,7 +2,7 @@
 
 A fork of https://github.com/zeframlou/create3-factory which doesn't depend on any particular deployer. This is achieved by using a permissionless deployment method based on [Seaport's CREATE2 factory](https://github.com/ProjectOpenSea/seaport/blob/main/docs/Deployment.md#setting-up-factory-on-a-new-chain).
 
-Anyone can deploy the Immutable CREATE3 factory at the canonical address `0x000000000021e8c144E94f3A58220bb817Dd9289` on any chain by following the deployment instructions:
+Anyone can deploy the Immutable CREATE3 factory at the canonical address `0x0000000000000A9eFE52e741bcB25da0E4438E71` on any chain by following the deployment instructions:
 
 ```bash
 # Trigger the deployment
@@ -12,7 +12,7 @@ npx hardhat run --network current ./scripts/deploy.ts
 
 # Optionally verify the contract
 export ETHERSCAN_API_KEY=
-npx hardhat --network current verify 0x000000000021e8c144E94f3A58220bb817Dd9289
+npx hardhat --network current verify 0x0000000000000A9eFE52e741bcB25da0E4438E71
 ```
 
 The exact deployment steps are mentioned in `./scripts/deploy.ts`:
